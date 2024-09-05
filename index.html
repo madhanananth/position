@@ -8,9 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=closesidebar()><a href="#">close</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">login</a></li>
+            <li><a href="#">about</a></li>
+        </ul>
+    </nav>
     <header>
         <h1>Madhan</h1>
         <h2>M.sc computer science</h2>
+        <a  onclick=showsidebar() href="#">Menu</a>
     </header>
     <main>
         <section>
@@ -130,6 +140,16 @@
             <li><a href="#">linkedin</a></li>
         </ul>
     </footer>
+    <script>
+        function showsidebar(){
+            sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='block'
+        }
+        function closesidebar(){
+            sidebar=document.querySelector('.sidebar')
+            sidebar.style.display='none'
+        }
+    </script>
 
 </body>
 </html>

@@ -18,6 +18,16 @@ header h1 {
     line-height: 2;
     
 }
+header a {
+    position: absolute;
+    right: 86px;
+    text-decoration: none;
+    border: solid 1px #706666;
+    padding: 4px 20px;
+    top: 30px;
+    background-color: yellow;
+    border-radius: 7px;
+}
 main{ 
 
     position: relative;
@@ -52,4 +62,23 @@ footer ul li a{
 }
 li{
     color: rgb(82, 80, 80);
+}
+.sidebar {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background-color: red;
+    z-index: 999;
+    width: 191px;
+    display: none;
+}
+.sidebar li {
+    width: 100%;
+    list-style: none;
+    padding: 6px 0px;
+    margin-left: 0px;
+}
+.sidebar a {
+    text-decoration: none;
 }
